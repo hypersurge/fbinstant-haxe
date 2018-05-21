@@ -1,6 +1,6 @@
 {
-  "name": "FBInstant",
-  "url" : "https://github.com/nickalie/FBInstant-Haxe/",
+  "name": "fbinstant",
+  "url" : "https://github.com/nickalie/fbinstant-haxe/",
   "license": "MIT",
   "tags": ["js", "html5", "facebook", "games"],
   "description": "Externs for Facebook Instant Games SDK",
