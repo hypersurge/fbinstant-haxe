@@ -1,3 +1,5 @@
+package fbinstant;
+
 /**
  * Represents the type of the update action to perform.
  * 

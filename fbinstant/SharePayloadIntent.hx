@@ -1,3 +1,5 @@
+package fbinstant;
+
 /**
  * Indicates the intent of the share.
  * 

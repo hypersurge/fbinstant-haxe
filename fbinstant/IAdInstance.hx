@@ -1,3 +1,6 @@
+package fbinstant;
+import js.Promise;
+
 extern interface IAdInstance
 {
 	/**

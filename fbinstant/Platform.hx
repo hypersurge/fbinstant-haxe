@@ -1,3 +1,5 @@
+package fbinstant;
+
 /**
  * Represents the current platform that the user is playing on.
  * 

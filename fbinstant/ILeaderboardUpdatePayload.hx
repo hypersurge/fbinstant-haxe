@@ -1,3 +1,5 @@
+package fbinstant;
+
 extern interface ILeaderboardUpdatePayload extends IUpdatePayload
 {
 	/**

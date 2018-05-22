@@ -1,3 +1,5 @@
+package fbinstant;
+
 /**
  * An Instant Games error code
  * 
