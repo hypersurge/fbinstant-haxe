@@ -4,7 +4,7 @@ Haxe externs (type definitions) for Facebook Instant Games SDK (v6.0).  Useful f
 
 ## Installation
 
-`haxelib git fbinstant-Haxe https://github.com/hypersurge/fbinstant-haxe.git`
+`haxelib git fbinstant-haxe https://github.com/hypersurge/fbinstant-haxe.git`
 	
 ## Documentation
 
