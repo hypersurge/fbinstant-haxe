@@ -216,5 +216,5 @@ extern interface IFBInstant
 	 * 
 	 * @memberOf IFBInstant
 	 */
-	function onPause(Void->Void) : Void;
+	function onPause(callback:Void->Void) : Void;
 }

@@ -51,5 +51,5 @@ extern interface IPayments
 	 * 
 	 * @memberOf IPayments
 	 */
-	function onReady(Void->Void) : Void;
+	function onReady(callback:Void->Void) : Void;
 }
