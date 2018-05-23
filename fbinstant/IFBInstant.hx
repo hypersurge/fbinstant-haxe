@@ -1,5 +1,5 @@
 package fbinstant;
-import js.Promise;;
+import js.Promise;
 
 extern interface IFBInstant
 {
@@ -216,5 +216,5 @@ extern interface IFBInstant
 	 * 
 	 * @memberOf IFBInstant
 	 */
-	function onPause(func:haxe.Constraints.Function) : Void;
+	function onPause(Void->Void) : Void;
 }

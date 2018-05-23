@@ -6,11 +6,11 @@ package fbinstant;
  * @export
  * @enum {string}
  */
-@:native("")
-extern enum SharePayloadIntent
+@:native("FBInstant.SharePayloadIntent")
+@:enum extern abstract SharePayloadIntent( String )
 {
-	INVITE = "INVITE";
-	REQUEST = "REQUEST";
-	CHALLENGE = "CHALLENGE";
-	SHARE = "SHARE";
+	var INVITE = "INVITE";
+	var REQUEST = "REQUEST";
+	var CHALLENGE = "CHALLENGE";
+	var SHARE = "SHARE";
 }

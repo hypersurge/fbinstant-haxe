@@ -6,15 +6,15 @@ package fbinstant;
  * @export
  * @enum {number}
  */
-@:native("")
-extern enum UpdateAction
+@:native("FBInstant.UpdateAction")
+@:enum extern abstract UpdateAction( String )
 {
 	/**
 	 * A custom update, with all content specified by the game.
 	 */
-	CUSTOM = "CUSTOM";
+	var CUSTOM = "CUSTOM";
 	/**
 	 * An update associated with an Instant Game leaderboard.
 	 */
-	LEADERBOARD = "LEADERBOARD";
+	var LEADERBOARD = "LEADERBOARD";
 }

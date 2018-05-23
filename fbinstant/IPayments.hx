@@ -51,5 +51,5 @@ extern interface IPayments
 	 * 
 	 * @memberOf IPayments
 	 */
-	function onReady(callback:haxe.Constraints.Function) : Void;
+	function onReady(Void->Void) : Void;
 }

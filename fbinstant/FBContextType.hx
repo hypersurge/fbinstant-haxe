@@ -6,23 +6,23 @@ package fbinstant;
  * @export
  * @enum {string}
  */
-@:native("")
-extern enum FBContextType
+@:native("FBInstant.FBContextType")
+@:enum extern abstract FBContextType( String )
 {
 	/**
 	 * A facebook post
 	 */
-	POST = "POST";
+	var POST = "POST";
 	/**
 	 * A messenger thread
 	 */
-	THREAD = "THREAD";
+	var THREAD = "THREAD";
 	/**
 	 * A facebook group
 	 */
-	GROUP = "GROUP";
+	var GROUP = "GROUP";
 	/**
 	 * Default context, where the player is the only participant
 	 */
-	SOLO = "SOLO";
+	var SOLO = "SOLO";
 }

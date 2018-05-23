@@ -2,15 +2,15 @@ package fbinstant;
 
 /**
  * Represents the current platform that the user is playing on.
- * 
+ *
  * @export
  * @enum {string}
  */
-@:native("")
-extern enum Platform
+@:native("FBInstant.Platform")
+@:enum extern abstract Platform( String )
 {
-	IOS = "IOS";
-	ANDROID = "ANDROID";
-	WEB = "WEB";
-	MOBILE_WEB = "MOBILE_WEB";
+	var IOS = "IOS";
+	var ANDROID = "ANDROID";
+	var WEB = "WEB";
+	var MOBILE_WEB = "MOBILE_WEB";
 }
