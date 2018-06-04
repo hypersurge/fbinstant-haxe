@@ -25,6 +25,21 @@ extern interface IFBPlayer
 	 */
 	function getSignedPlayerInfoAsync(requestPayload:String) : Promise<ISignedPlayerInfo>;
 	/**
+	 * Returns a promise that resolves with whether the player can subscribe to the game bot or not.
+	 * 
+	 * @returns {Promise<Bool>} Whether a player can subscribe to the game bot or not. Developer can only call subscribeBotAsync() after checking canSubscribeBotAsync(), and the player will only be able to see this bot subscription dialog once for a specific game.
+	 * 
+	 * @memberOf IFBPlayer
+	 */
+	function canSubscribeBotAsync() : Promise<Bool>;
+	/**
+	 * Request that the player subscribe the bot associated to the game. The API will reject if the subscription fails - else, the player will subscribe the game bot.
+	 * 
+	 * @returns {Promise<Void>} A promise that resolves if player successfully subscribed to the game bot, or rejects if request failed or player chose to not subscribe.
+	 * @throws INVALID_PARAM, PENDING_REQUEST, CLIENT_REQUIRES_UPDATE
+	 */
+	function subscribeBotAsync() : Promise<Void>;
+	/**
 	 * The player's localized display name.
 	 * This function should not be called until FBInstant.startGameAsync() has resolved.
 	 * 

@@ -46,15 +46,16 @@ extern interface IFBInstant
 	 */
 	function getRewardedVideoAsync(placementID:String) : Promise<IAdInstance>;
 	/**
-	 * [IN CLOSED BETA] Attempts to match the current player with other users looking for people to play with.
+	 * Attempts to match the current player with other users looking for people to play with.
 	 * If successful the a new Messenger group thread will be created containing the matched players and the player will be context switched to that thread.
+	 * The default minimum and maximum number of players in one matched thread are 2 and 20 respectively, depending on how many players are trying to get matched around the same time. The values can be changed in fbapp-config.json.
 	 * 
 	 * @returns {Promise<void>} A promise that resolves when the player has been added to a group thread and switched into the thread's context.
 	 * @throws INVALID_PARAM, NETWORK_FAILURE, USER_INPUT, PENDING_REQUEST, CLIENT_UNSUPPORTED_OPERATION, INVALID_OPERATION
 	 * 
 	 * @memberOf IFBInstant
 	 */
-	function matchPlayerAsync(?matchTag:String) : Promise<Void>;
+	function matchPlayerAsync(?matchTag:String, ?switchContextWhenMatched:Bool) : Promise<Void>;
 	/**
 	 * [IN CLOSED BETA] Checks if the current player is eligible for the matchPlayerAsync API.
 	 * 
@@ -191,11 +192,27 @@ extern interface IFBInstant
 	 * [IN CLOSED BETA] Request that the client switch to a different Instant Game.
 	 * The API will reject if the switch fails - else, the client will load the new game.
 	 * 
-	 * @returns {Promise<void>}
+	 * @returns {Promise<Void>}
 	 * 
 	 * @memberOf IFBInstant
 	 */
 	function switchGameAsync(appID:String, ?data:String) : Promise<Void>;
+	/**
+	 * Returns whether or not the user is eligible to have shortcut creation requested. Will return false if createShortcutAsync was already called this session or the user is ineligible for shortcut creation.
+	 * 
+	 * @returns {Promise<Bool>} Promise that resolves with true if the game can request the player create a shortcut to the game, and false otherwise.
+	 * @throws PENDING_REQUEST, CLIENT_REQUIRES_UPDATE, INVALID_OPERATION
+	 * 
+	 * @memberOf IFBInstant
+	 */
+	function canCreateShortcutAsync() : Promise<Bool>;
+	/**
+	 * Prompts the user to create a shortcut to the game if they are eligible to Can only be called once per session. (see canCreateShortcutAsync).
+	 * 
+	 * @returns {Promise<Void>}
+	 * @throws USER_INPUT, PENDING_REQUEST, CLIENT_REQUIRES_UPDATE, INVALID_OPERATION
+	 */
+	function createShortcutAsync() : Promise<Void>;
 	/**
 	 * Quits the game
 	 * 

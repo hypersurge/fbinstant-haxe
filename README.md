@@ -1,6 +1,6 @@
 # Facebook Instant Game SDK Haxe Externs
 
-Haxe externs (type definitions) for Facebook Instant Games SDK (v6.0).  Useful for Haxe developers who are implementing the FBInstant SDK into their HTML5 games.
+Haxe externs (type definitions) for Facebook Instant Games SDK (v6.2).  Useful for Haxe developers who are implementing the FBInstant SDK into their HTML5 games.
 
 ## Installation
 
@@ -12,4 +12,4 @@ API Documentation available at https://developers.facebook.com/docs/games/instan
 
 ## Credits
 
-Maintained by Hypersurge, originally generated from https://www.npmjs.com/package/@coolgames/fb-instant-definitions using https://lib.haxe.org/p/refactor/
+Maintained by Hypersurge, originally generated from https://www.npmjs.com/package/@coolgames/fb-instant-definitions (v6.0) using https://lib.haxe.org/p/refactor/

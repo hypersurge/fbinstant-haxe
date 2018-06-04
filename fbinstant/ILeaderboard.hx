@@ -58,4 +58,13 @@ extern interface ILeaderboard
 	 * @memberOf ILeaderboard
 	 */
 	function getEntriesAsync(count:Float, offset:Float) : Promise<Array<ILeaderboardEntry>>;
+	/**
+	 * Retrieves the leaderboard score entries of the current player's connected players (including the current player), ordered by local rank within the set of connected players.
+	 * 
+	 * @returns {Promise<Array<ILeaderboardEntry>>} Resolves with the leaderboard entries that match the query.
+	 * @throws NETWORK_FAILURE, RATE_LIMITED
+	 * 
+	 * @memberOf ILeaderboard
+	 */
+	function getConnectedPlayerEntriesAsync(count:Float, offset:Float) : Promise<Array<ILeaderboardEntry>>;
 }
