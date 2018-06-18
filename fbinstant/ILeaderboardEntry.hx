@@ -25,7 +25,7 @@ extern interface ILeaderboardEntry
 	 * 
 	 * @memberOf ILeaderboardEntry
 	 */
-	function getTimestamp() : Float;
+	function getTimestamp() : Int;
 	/**
 	 * Gets the rank of the player's score in the leaderboard.
 	 * 
@@ -33,7 +33,7 @@ extern interface ILeaderboardEntry
 	 * 
 	 * @memberOf ILeaderboardEntry
 	 */
-	function getRank() : Float;
+	function getRank() : Int;
 	/**
 	 * Gets the developer-specified payload associated with the score, or null if one was not set.
 	 * 
