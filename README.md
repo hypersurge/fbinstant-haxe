@@ -2,13 +2,17 @@
 
 Haxe externs (type definitions) for Facebook Instant Games SDK (v6.2).  Useful for Haxe developers who are implementing the FBInstant SDK into their HTML5 games.
 
-## Installation
+## Installation From Haxelib
+
+`haxelib install fbinstant`
+	
+## Installation From Github (latest)
 
 `haxelib git fbinstant-haxe https://github.com/hypersurge/fbinstant-haxe.git`
 	
 ## Documentation
 
-API Documentation available at https://developers.facebook.com/docs/games/instant-games/sdk/fbinstant6.0
+API Documentation available at https://developers.facebook.com/docs/games/instant-games/sdk/fbinstant6.2
 
 ## Credits
 

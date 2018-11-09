@@ -1,10 +1,10 @@
 {
   "name": "fbinstant",
-  "url" : "https://github.com/nickalie/fbinstant-haxe/",
+  "url" : "https://github.com/hypersurge/fbinstant-haxe/",
   "license": "MIT",
   "tags": ["js", "html5", "facebook", "games"],
-  "description": "Externs for Facebook Instant Games SDK",
-  "version": "6.0",
-  "releasenote": "initial",
+  "description": "Externs for Facebook Instant Games JS SDK",
+  "version": "6.2.0",
+  "releasenote": "Initial port of Typescript definitions.  Usable, but may have issues?",
   "contributors": ["hypersurge"]
 }
